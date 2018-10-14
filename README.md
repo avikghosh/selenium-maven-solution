@@ -2,13 +2,11 @@
 
 Requirements for running this solution
 ---------------------------------
----------------------------------
   * Install JDK 8 (Java Development Kit), configure JAVA_HOME variable and add it to PATH
   * Install Maven and add it to your PATH
   * Download Chromedriver for your OS (This solution has been tested in Chromedriver 2.35 in Ubuntu 16.04)  
   
 Steps to run this solution
---------------------------
 --------------------------
   * Clone this repo to your computer to a directory where you have read/write access
   * Change **chromedriver.path** in src/test/resources/config.properties to where you have downloaded Chromedriver
