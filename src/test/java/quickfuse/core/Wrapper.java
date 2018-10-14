@@ -53,23 +53,6 @@ public class Wrapper {
         }
     }
 
-    public void moveToElementAndClick(String xpath) {
-        WebElement element = findElement(xpath);
-        if (element!= null) {
-            Actions action = new Actions(driver);
-            try {
-                action.moveToElement(element).click().build().perform();
-            }
-            catch (Exception ex) {
-                System.out.println("Failure || Element Click || Cannot Click Element with Xpath: " + xpath + " " + ex.getMessage());
-            }
-        } else {
-            System.out.println("Failure || Element Click || Cannot find Element with Xpath: " + xpath);
-            takeScreenshot();
-            AssertUtils.AssertFail();
-        }
-    }
-
     public void enterText(String xpath, String text) {
         WebElement element = findElement(xpath);
         int counter = 0;
