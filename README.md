@@ -11,8 +11,8 @@ Steps to run this solution
   * Clone this repo to your computer to a directory where you have read/write access
   * Change **chromedriver.path** in src/test/resources/config.properties to where you have downloaded Chromedriver
   * Change **ss.path** in src/test/resources/config.properties to where you want screenshots to be saved (Ensure you have write permission for this directory)
-  * You can run this solution by running the command 
-  ```bash
+  * You can run this solution by running the command in your terminal
+  ```console
      mvn clean compile test
 ```
 
